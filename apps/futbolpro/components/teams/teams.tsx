@@ -14,17 +14,21 @@ export function Teams(props: TeamsProps) {
   }, []);
 
   return (
-    <div>
-      <h1>Welcome to Teams!</h1>
-      {teams.map((team) => {
+    <div className="section">
+      <h1>Teams</h1>
+      <div className="flex-wrap">
+        {teams.map((team) => {
         return (
           <>
-            <div>{team.team.name}</div>
-            <div>{team.team.founded}</div>
-            <div>{team.team.logo}</div>
+            <div className="card">
+              <img src={team.team.logo} alt="" />
+              <p>{team.team.name}</p>
+              <p><small>{team.team.founded}</small></p>
+            </div>
           </>
         );
       })}
+      </div>
     </div>
   );
 }

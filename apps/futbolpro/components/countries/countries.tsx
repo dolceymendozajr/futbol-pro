@@ -14,17 +14,20 @@ export function Countries(props: CountriesProps) {
   }, []);
 
   return (
-    <div>
-      <h1>Welcome to Countries!</h1>
-      {countries.map((country) => {
-        return (
-          <>
-            <div>{country.name}</div>
-            <div>{country.code}</div>
-            <div>{country.flag}</div>
-          </>
-        );
-      })}
+    <div className="section">
+      <h1>Countries</h1>
+      <div className="flex-wrap">
+        {countries.map((country) => {
+          return (
+            <>
+              <div className="card">
+                <img src={country.flag} alt="" />
+                <p>{country.name}</p>
+              </div>
+            </>
+          );
+        })}
+      </div>
     </div>
   );
 }

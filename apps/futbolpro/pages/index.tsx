@@ -13,12 +13,14 @@ export function Index({ players, countries, teams }: IndexProps) {
    */
 
   return (
-    <div>
+    <>
       <Ui />
-      <Players players={players} />
-      <Countries countries={countries} />
-      <Teams teams={teams} />
-    </div>
+      <div className="main">
+        <Countries countries={countries} />
+        <Teams teams={teams} />
+        <Players players={players} />
+      </div>
+    </>
   );
 }
 

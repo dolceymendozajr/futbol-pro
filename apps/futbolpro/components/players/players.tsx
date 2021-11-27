@@ -14,17 +14,21 @@ export function Players(props: PlayersProps) {
   }, []);
 
   return (
-    <div>
-      <h1>Welcome to Players! </h1>
-      {players.map((player) => {
+    <div className="section">
+      <h1>Players</h1>
+      <div className="flex-wrap">
+        {players.map((player) => {
         return (
           <>
-            <div>{player.player.name}</div>
-            <div>{player.player.age}</div>
-            <div>{player.player.photo}</div>
+            <div className="card">
+              <img src={player.player.photo} alt="" />
+              <p>{player.player.name}</p>
+              <p><small>{player.player.age} años</small></p>
+            </div>
           </>
         );
       })}
+      </div>
     </div>
   );
 }

@@ -6,7 +6,7 @@ export interface UiProps {}
 export function Ui(props: UiProps) {
   return (
     <div>
-      <h1 className={styles.title}>Welcome to Futbol pro</h1>
+      <h1 className={styles.title}>Futbol PRO</h1>
     </div>
   );
 }
