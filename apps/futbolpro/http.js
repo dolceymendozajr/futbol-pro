@@ -1,7 +1,7 @@
 const axios = require('axios');
 const headers = {
   'x-rapidapi-host': 'api-football-beta.p.rapidapi.com',
-  'x-rapidapi-key': '523c02404fmsh753be8ee7785927p15cf16jsn70854ba8b459',
+  'x-rapidapi-key': '7d27fbde81msh05692e84ffed670p18e640jsnee1c72d4f680',
 };
 
 const http = {
