@@ -3,8 +3,9 @@ import { IndexProps } from '@envfutbolpro/types';
 import { Ui } from '@envfutbolpro/ui';
 import Players from '../components/players/players';
 import Countries from '../components/countries/countries';
+import Teams from '../components/teams/teams';
 
-export function Index({ players, countries }: IndexProps) {
+export function Index({ players, countries, teams }: IndexProps) {
   /*
    * Replace the elements below with your own.
    *
@@ -16,6 +17,7 @@ export function Index({ players, countries }: IndexProps) {
       <Ui />
       <Players players={players} />
       <Countries countries={countries} />
+      <Teams teams={teams} />
     </div>
   );
 }
