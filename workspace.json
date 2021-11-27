@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "futbolpro": "apps/futbolpro",
+    "futbolpro-e2e": "apps/futbolpro-e2e"
+  }
+}
