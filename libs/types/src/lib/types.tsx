@@ -21,6 +21,8 @@ export interface TeamsProps {
 
 export interface Player {
   name: string;
+  age: string;
+  photo: string;
 }
 
 export interface Country {
